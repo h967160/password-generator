@@ -1,1 +1,102 @@
-<h1>Password Generator Test</h1>
+<div class="container">
+
+<div class="form-box mt-5">
+  <form class="mx-auto">
+  <div class="card bg-white text-dark">
+    <div class="card-header">
+    <h5 class="my-3">Random Password Generator<i
+        class="fa-solid fa-key px-1"
+      ></i></h5>
+    </div>
+    <div class="card-body">
+      
+    {{!-- Password Length --}}
+    <div class="row mb-3 mt-1">
+      <label for="passwordLength" class="col-3 col-form-label">Password Length</label>
+        <div class="col-9">
+          <input
+        type="number"
+        class="form-control"
+        id="passwordLength"
+        name="passwordLength"
+        min="4" max="16"
+        />
+        <div id="passwordLengthHelp" class="form-text">Length is availabe between 4~16</div>
+        </div>
+    </div>
+    
+    {{!-- Lowercase --}}
+    <div class="row mb-3">
+    <div class="col-form-label col-3 pt-0">      
+      <label class="form-check-label" for="lowercase">Include Lowercase Characters</label>
+      </div>
+    <div class="col-9">
+      <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="lowercase" />
+      <label class="form-check-label" for="lowercase">(e.g. abcdefg)</label>
+      </div>
+    </div>
+  </div>
+
+    {{!-- Uppercase --}}
+    <div class="row mb-3">
+    <div class="col-form-label col-3 pt-0">      
+      <label class="form-check-label" for="uppercase">Include Uppercase Characters</label>
+      </div>
+    <div class="col-9">
+      <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="lowercase" />
+      <label class="form-check-label" for="lowercase">(e.g. ABCDEFG)</label>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Numbers --}}
+    <div class="row mb-3">
+    <div class="col-form-label col-3 pt-0">      
+      <label class="form-check-label" for="numbers">Include Numbers</label>
+      </div>
+    <div class="col-9">
+      <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="lowercase" />
+      <label class="form-check-label" for="numbers">(e.g. 123456)</label>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Symbols --}}
+    <div class="row mb-3">
+    <div class="col-form-label col-3 pt-0">      
+      <label class="form-check-label" for="numbers">Include Symbols</label>
+      </div>
+    <div class="col-9">
+      <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="symbols" />
+      <label class="form-check-label" for="symbols">(e.g. @#$%)</label>
+      </div>
+    </div>
+  </div>
+
+    {{!-- Exclude Characters --}}
+    <div class="row mb-3">
+      <label for="excludeCharacters" class="col-3 col-form-label">Exclude Characters</label>
+        <div class="col-9">
+          <input
+        type="text"
+        class="form-control"
+        id="excludeCharacters"
+        name="excludeCharacters"
+        />
+        <div id="excludeCharactersHelp" class="form-text">These characters will not appear in the password</div>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Generate Password</button>
+  </form>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
